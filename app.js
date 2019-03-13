@@ -7,9 +7,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-const port = process.env.PORT || 3000
-
 var app = express();
+const port =process.env.PORT || 3000;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,6 +18,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+//this is where express stores web files => css js images etc...
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
@@ -40,6 +40,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(port, ()=> {
-  console.log(`app is running on ${port}`);
-});
+// changed here
+app.listen(port,()=>{
+  console.log('app is running on ${port}');
+})
