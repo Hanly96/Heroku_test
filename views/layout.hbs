@@ -3,10 +3,23 @@
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/master.css">
   </head>
   <body>
-     <a href="/">home0-0</a> 
+    <!-- triple handlebars is a shortband for a router view-->
+     <div id="nav" class="col-sm-12">
+        <a class="nav_tag" href="/">models</a> 
+        <a class="nav_tag" href="/gallery">gallery</a>
+        <a class="nav_tag" href="/color">colors</a>
+        <a class="nav_tag" href="/special">specifications</a>
+        <a class="nav_tag" href="/warranty">warranty</a>
+        <a class="nav_tag" href="/contact">contact us</a>       
+     </div>
     {{{body}}}
+
+
+    <h3>Welcome</h3>
+    <a href="/user1">User 1</a> 
+    <a href="/user2">User 2</a> 
   </body>
 </html>

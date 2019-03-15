@@ -1,5 +1,39 @@
-body{background-color: $bg-color;
+body {
+    background-color: $bg-color;
     font-size: 14px;
     color:$text-color;
+    width: 1280px;
+    margin: 0 auto;
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
 
 }
+
+a:hover{
+    color:$pink;
+}
+
+.nav_tag{
+    margin-right: 5%;
+}
+#nav{
+    margin-bottom: 3%;
+}
+
+#nav li{
+    display:block;
+}
+
+#nav ul{
+    list-style-type: none;
+}
+
+#discription{
+    width: 500px;
+}
+
+.title{
+    font-size: 30pt;
+    font-weight: bold;
+}
+

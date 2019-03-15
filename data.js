@@ -4,16 +4,16 @@ const data ={
 
 user1:{
     name:"Tung Le",
-    role: "Project Manager",
+    role: "Projectasas Manager",
     bio: "Manage the timesheet",
-    bioPic:""
+    bioPic:"images/pooh.jpg"
     },
-user1:{
+user2:{
     name:"Tung Le",
-    role: "Project Manager",
+    role: "Director",
     bio: "Manage the timesheet",
     bioPic:""
-    },    
-};
+    }
+}
 
 module.exports = data;
