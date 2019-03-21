@@ -14,8 +14,9 @@ router.get('/', function(req, res, next) {
 });
 
 //copy 
-router.get('/', function(req, res, next) {
-  console.log("user:",data[req.params.user]);
+router.get('/:user', function(req, res, next) {
+  console.log("data:",data);
+  console.log("user:",req.params.user);
   res.render('userpage',data[req.params.user]);
 });
 

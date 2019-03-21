@@ -11,6 +11,7 @@ body {
 
 a:hover{
     color:$pink;
+    text-decoration: none;
 }
 
 .nav_tag{
@@ -30,10 +31,14 @@ a:hover{
 
 #discription{
     width: 500px;
+    margin-top: 5%;
 }
 
 .title{
     font-size: 30pt;
     font-weight: bold;
+    color: $dark-pink;
 }
+
+
 

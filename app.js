@@ -18,7 +18,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
 //this is where express stores web files => css js images etc...
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -44,4 +43,4 @@ app.use(function(err, req, res, next) {
 // changed here
 app.listen(port,()=>{
   console.log(`app is running on ${port}`);
-});
+})
